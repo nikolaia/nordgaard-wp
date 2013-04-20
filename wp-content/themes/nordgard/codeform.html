@@ -1,0 +1,16 @@
+<div id="codeForm">
+	<img id="codeFormToggle" src="<?php bloginfo('template_url'); ?>/img/code2.png" />
+	<form action="<?php bloginfo('template_url'); ?>/codeform.php" method="post" target="_blank">
+	<label>Skriv inn invitasjonskoden din</label>
+	<input type="text" placeholder="Invitasjonskode" name="code" id="code">
+	<label class="radio">
+	<input type="radio" name="response" id="attendingRadio" value="1" checked>
+	Jeg kommer!
+	</label>
+	<label class="radio">
+	<input type="radio" name="response" id="notAttendingRadio" value="0">
+	Jeg er kjedelig og blir hjemme
+	</label>
+	<button type="submit" class="btn">Registrer svar</button>
+	</form>
+</div>

@@ -1,0 +1,285 @@
+/*   
+Theme Name: Nordgård Theme
+Theme URI: http://www.nordgårdfestivalen.no
+Description: Custom WordPress Theme for Nordgårdsfestivalen
+Author: Nikolai Norman Andersen
+Author URI: http://www.stasj.com
+Version: 1.0.2
+*/
+
+@media screen {
+
+* { margin: 0; padding: 0; }
+body { background: white; font-family: 'Droid Sans', sans-serif; }
+.screen-reader-text { position: absolute; left: -9999px; top: -9999px; }
+.clear { clear: both; }
+.group:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+* html .group, *:first-child+html .group { zoom: 1; } /* First selector = IE6, Second Selector = IE 7 */
+
+#page-wrap { width: 960px; margin: 20px auto; }
+
+h1, h2, h3 { font-weight: normal; margin: 0 0 10px 0; }
+h1 { }
+h2 { }
+h3 { }
+
+p { margin: 0 0 10px 0; }
+a { }
+a:hover { } 
+
+blockquote { }
+blockquote p { }
+
+ul, ol { margin: 0 0 10px 0; }
+
+.post { }
+
+.entry { }
+.entry a { }
+.entry a:hover { }
+
+pre { }
+code, tt { }
+
+#meta { }
+.postmetadata { }
+
+#sidebar { }
+
+.navgation { }
+   .next-posts { }
+   .prev-posts { }
+
+#searchform { }
+	#s { }
+	#searchsubmt { }
+	
+ol.commentlist { list-style: none; }
+ol.commentlist li { }
+ol.commentlist li.alt { }
+ol.commentlist li.bypostauthor { }
+ol.commentlist li.byuser { }
+ol.commentlist li.comment-author-admin { }
+ol.commentlist li.comment { border-bottom: 1px dotted #666; padding: 10px; }
+ol.commentlist li.comment div.comment-author { }
+ol.commentlist li.comment div.vcard { }
+ol.commentlist li.comment div.vcard cite.fn { font-style: normal; }
+ol.commentlist li.comment div.vcard cite.fn a.url { }
+ol.commentlist li.comment div.vcard img.avatar { float:right; margin: 0 0 10px 10px; }
+ol.commentlist li.comment div.vcard img.avatar-32 { }
+ol.commentlist li.comment div.vcard img.photo { }
+ol.commentlist li.comment div.vcard span.says { }
+ol.commentlist li.comment div.commentmetadata { }
+ol.commentlist li.comment div.comment-meta { font-size: 10px; }
+ol.commentlist li.comment div.comment-meta a { color: #ccc; }
+ol.commentlist li.comment p { }
+ol.commentlist li.comment ul { }
+ol.commentlist li.comment div.reply { font-size: 11px; }
+ol.commentlist li.comment div.reply a { font-weight: bold; }
+ol.commentlist li.comment ul.children { list-style: none; margin: 10px 0 0; }
+ol.commentlist li.comment ul.children li { }
+ol.commentlist li.comment ul.children li.alt { }
+ol.commentlist li.comment ul.children li.bypostauthor { }
+ol.commentlist li.comment ul.children li.byuser { }
+ol.commentlist li.comment ul.children li.comment { }
+ol.commentlist li.comment ul.children li.comment-author-admin { }
+ol.commentlist li.comment ul.children li.depth-2 { border-left: 5px solid #555; margin: 0 0 10px 10px; }
+ol.commentlist li.comment ul.children li.depth-3 { border-left: 5px solid #999; margin: 0 0 10px 10px; }
+ol.commentlist li.comment ul.children li.depth-4 { border-left: 5px solid #bbb; margin: 0 0 10px 10px; }
+ol.commentlist li.comment ul.children li.depth-5 { }
+ol.commentlist li.comment ul.children li.odd { }
+ol.commentlist li.even { background: #fff; }
+ol.commentlist li.odd { background: #f6f6f6; }
+ol.commentlist li.parent { border-left: 5px solid #111; }
+ol.commentlist li.thread-alt { }
+ol.commentlist li.thread-even { }
+ol.commentlist li.thread-odd { }
+
+form { }
+input[type=text] { }
+textarea { }
+
+
+} /* END screen media */
+
+
+@media print {
+
+.do-not-print { display: none; }
+#comments { page-break-before: always; }
+
+body { width: 100% !important; margin: 0 !important; padding: 0 !important; line-height: 1.4; word-spacing: 1.1pt; letter-spacing: 0.2pt; color: #000; background: none; font-size: 12pt; }
+h1,h2,h3,h4,h5,h6 { font-family: 'Droid Sans', sans-serif; }
+h1 { font-size: 19pt; }
+h2 { font-size:17pt; }
+h3 { font-size:15pt; }
+h4,h5,h6 { font-size:12pt; }
+code { font: 10pt Courier, monospace; } 
+blockquote { margin: 1.3em; padding: 1em; }
+img { display: block; margin: 1em 0; }
+a img { border: none; }
+table { margin: 1px; text-align:left; }
+th { border-bottom: 1px solid #333;  font-weight: bold; }
+td { border-bottom: 1px solid #333; }
+th, td { padding: 4px 10px 4px 0; }
+caption { background: #fff; margin-bottom: 2em; text-align: left; }
+thead { display: table-header-group; }
+tr { page-break-inside: avoid; } 
+a { text-decoration: none; color: black; }
+	
+} /* END print media */
+
+body {
+	margin-top: 40px;
+	font-family: 'Droid Sans', sans-serif !important;
+	/* background: #f4eae0 url("img/bg.jpg") no-repeat center center; */
+}
+
+/*
+	color1: #ba5c38;
+	color2: #a08b0e;
+	color3: #5e874f;
+	color4: #5c7e8a;
+*/
+
+a, a:visited {
+	color: #ba5d36 !important;
+}
+
+a:hover {
+	color: #a08b0e !important;
+	text-decoration: none !important;
+}
+
+h2, h3, h4 {
+	color: #ba5d36 !important;
+	text-transform: uppercase;
+}
+
+#corner {
+	position: fixed;
+	right: 0;
+	top: 0;
+	height: 180px;
+	width: 180px;
+}
+
+hr {
+	margin: 30px 0 !important;
+	color: #000;
+	background-color: #000;
+	border: 0;
+	height: 2px;
+	opacity: 70%;
+}
+
+#header {
+	text-align: center;
+}
+
+#logo {
+	width: 450px;
+}
+
+#menu {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#menu hr {
+	margin: 0 0 10px 0 !important;
+	padding: 0 !important;
+	border: 0;
+}
+
+#menu a {
+	font-size: 1.2em;
+	margin: 0 5px;
+}
+
+
+#menuList 
+{
+	list-style: none;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 21px;
+	min-width: 205px;
+}
+
+#menuList li
+{
+	float: left;
+	margin-right: 10px;
+}
+
+.newsImage {
+	text-align: center;
+}
+
+.newsImage img {
+	height: 300px;
+}
+
+#codeForm {
+	position: fixed;
+	top: 50px;
+	left: -340px;
+	background: transparent url("img/trans-bg.png") repeat 0 0;
+	height: 150px;
+	width: 280px;
+	padding: 30px;
+	z-index: 50;
+}
+
+#codeFormToggle {
+	position: absolute;
+	top: 20px;
+	right: -165px;
+}
+
+#codeFormBottom form {
+	padding: 40px;
+}
+
+.main {
+	background: transparent url("img/trans-bg.png") repeat 0 0;
+	border-radius: 3px;
+	min-height: 200px;
+	padding: 20px 0 40px 0;
+	margin-bottom: 50px;
+}
+
+#images div {
+	text-align: center;
+}
+
+#images img {
+	width: 100%;
+}
+
+.jcarousel-container {
+	overflow: hidden;
+}
+
+.jcarousel-item {
+	margin-right: 10px;
+}
+
+.box {
+	color: #f4eae0;
+	background-color: #5c7e8a;
+	min-height: 200px;
+	border-radius: 5px;
+	padding: 5px 10px;
+	margin-bottom: 20px;
+}
+
+.element {
+	height: 30px;
+}
+
+#footer {
+	margin-top: 20px;
+}
