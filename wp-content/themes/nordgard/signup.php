@@ -9,28 +9,21 @@
 
 			<div class="span3"></div>
 			<div class="span6">
-
-				<h2>Det er <?php include "ngf_passesleft.php";?> festivalpass igjen!</h2>
-				<br/>
-				<h3>Vilkår for påmelding:</h3>
-				<ol>
-					<li>Æ e kjent med at festivalpasset mitt e gratis, og at æ derfor skal jobbe ei frivilligvakt under festivalen.</li>
-					<li>Æ love at æ har alle intensjona om å komme på Nordgårdfestivalen når æ nu melde mæ på, sjøl om æ ikkje har betalt penga for billetten. Det veit æ næmlig at gjør det mye lettere for arrangøran i planlegginga.</li>
-					<li>Æ må betale en søt liten sum for mat på forhånd (informasjon kommer om frist), som fungerer som endelig bekreftelse på at æ kommer på Nordgårdfestivalen. Detta beløpet får æ igjæn i nyyydelig mat under festivalen. Æ veit også at æ miste festivalpasset mitt dersom æ ikkje betale innen fristen.</li>
-					<li>Æ skal være med på å gjøre Nordgårdfestivalen fette nais!</li>
-				</ol>
-				<br/>
-				<h3>Påmelding</h3>
+				<?php do_action('show_nordgard_passesleft'); ?>
+				<hr/>
+				<h3>Påmeldingsskjema</h3>
 			</div>
 			<div class="span3"></div>
 
 		</div>
 
+		<?php do_action('show_nordgard_showerror'); ?>
+
 		<div class="row">
 
 			<div class="span3"></div>
-			
-			<form action="<?php bloginfo('template_url'); ?>/backoffice/ngf_signup.php" method="post" target="_blank">
+
+			<form method="post">
 					
 			<div class="span3">
 
@@ -44,7 +37,7 @@
 					</div>
 					<div>
 						<label>Bursdag</label>
-						<input type="date" placeholder="Bursdag" name="Birthday" id="signup_birthday">
+						<input type="date" placeholder="Bursdag" name="Birthdate" id="signup_birthday">
 					</div>
 					<div>
 						<label>Epost</label>
@@ -70,13 +63,31 @@
 					</div>
 					<div>
 						<label for="acceptTerms"><input type="checkbox" id="acceptTerms" name="acceptTerms" value="acceptedTerms">
-						Jeg har lest og godtar vilkårene!</label>
+						Æ har lest og godtar vilkåran under!</label>
 					</div>
 					<div>
 						<button type="submit" class="btn">Registrer svar</button>	
 					</div>
 				</div>
 			</form>
+			<div class="span3"></div>
+
+		</div>
+
+		<div class="row">
+
+			<div class="span3"></div>
+			<div class="span6">
+
+				<br/>
+				<h3>Vilkår for påmelding:</h3>
+				<ol>
+					<li>Æ e kjent med at festivalpasset mitt e gratis, og at æ derfor skal jobbe ei frivilligvakt under festivalen.</li>
+					<li>Æ love at æ har alle intensjona om å komme på Nordgårdfestivalen når æ nu melde mæ på, sjøl om æ ikkje har betalt penga for billetten. Det veit æ næmlig at gjør det mye lettere for arrangøran i planlegginga.</li>
+					<li>Æ må betale en søt liten sum for mat på forhånd (informasjon kommer om frist), som fungerer som endelig bekreftelse på at æ kommer på Nordgårdfestivalen. Detta beløpet får æ igjæn i nyyydelig mat under festivalen. Æ veit også at æ miste festivalpasset mitt dersom æ ikkje betale innen fristen.</li>
+					<li>Æ skal være med på å gjøre Nordgårdfestivalen fette nais!</li>
+				</ol>
+			</div>
 			<div class="span3"></div>
 
 		</div>

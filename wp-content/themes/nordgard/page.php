@@ -46,6 +46,7 @@
 						<?php the_content(); ?>
 					
 						<br/><?php include (TEMPLATEPATH . '/inc/meta.php' ); ?>
+						<?php comments_template( '', true ); ?>
 					
 					</div>
 					
