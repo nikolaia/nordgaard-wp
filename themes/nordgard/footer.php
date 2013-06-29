@@ -3,10 +3,10 @@
 
 	<div id="footerLinks">
 		<a href="http://www.tromsfylke.no/Forside/Logoer/tabid/2057/Default.aspx">
-			<img src="<?php bloginfo('template_url'); ?>/img/dyroey.png" alt="Logo Troms fylkeskommune" />
+			<img src="<?php bloginfo('template_url'); ?>/img/troms.png" alt="Logo Troms fylkeskommune" />
 		</a>
 		<a href="http://snl.no/Dyr%C3%B8y/kommune_i_Troms">
-			<img src="<?php bloginfo('template_url'); ?>/img/troms.png" alt="Logo Dyrøy kommune" />
+			<img src="<?php bloginfo('template_url'); ?>/img/dyroey.png" alt="Logo Dyrøy kommune" />
 		</a>
 	</div>
 	
