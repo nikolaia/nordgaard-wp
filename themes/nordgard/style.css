@@ -283,3 +283,12 @@ hr {
 #footer {
 	margin-top: 20px;
 }
+
+#footerLinks  {
+	width: 120px;
+	margin: 0 auto 50px auto;
+}
+
+#footerLinks img {
+	width: 50px;
+}
